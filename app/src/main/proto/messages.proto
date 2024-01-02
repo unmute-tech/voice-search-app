@@ -1,0 +1,96 @@
+syntax = 'proto2';
+
+package cloudasr.messages;
+
+message HeartbeatMessage {
+	required string address = 1;
+	required string model = 2;
+	required Status status = 3;
+
+	enum Status {
+		STARTED = 0;
+		WAITING = 1;
+		WORKING = 2;
+		FINISHED = 3;
+	};
+}
+
+message WorkerStatusMessage {
+	required string address = 1;
+	required string model = 2;
+	required Status status = 3;
+	required int32 time = 4;
+
+	enum Status {
+		STARTED = 0;
+		WAITING = 1;
+		WORKING = 2;
+	};
+}
+
+message WorkerRequestMessage {
+	required string model = 1;
+}
+
+message MasterResponseMessage {
+	required Status status = 1;
+	optional string address = 2;
+
+	enum Status {
+		SUCCESS = 0;
+		ERROR = 1;
+	};
+}
+
+message RecognitionRequestMessage {
+	required string id = 1;
+	required Type type = 2;
+	required bytes body = 3;
+	optional bool has_next = 4;
+	optional int32 frame_rate = 5;
+	optional string new_lm = 6;
+
+	enum Type {
+		BATCH = 0;
+		ONLINE = 1;
+	}
+}
+
+message Alternative {
+	required string transcript = 1;
+	required float confidence = 2;
+}
+
+message Alignment {
+	required string word = 1;
+	required float start = 2;
+	required float duration = 3;
+	required float confidence = 4;
+}
+
+message ResultsListMessage {
+	repeated ResultsMessage results = 1;
+}
+
+message ResultsMessage {
+	required Status status = 1;
+	optional string id = 2;
+	optional bool final = 3;
+	repeated Alternative alternatives = 4;
+	repeated Alignment alignment = 5;
+
+	enum Status {
+		SUCCESS = 0;
+		ERROR = 1;
+	};
+}
+
+message SaverMessage {
+	required string id = 1;
+	required int32 part = 2;
+	required string chunk_id = 3;
+	required string model = 4;
+	required bytes body = 5;
+	required int32 frame_rate = 6;
+	repeated Alternative alternatives = 7;
+}

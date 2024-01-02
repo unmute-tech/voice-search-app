@@ -1,0 +1,116 @@
+[versions]
+accomponist = "0.30.1"
+android-compileSdk = "34"
+android-minSdk = "21"
+android-targetSdk = "34" # Also in AndroidManifest.xml
+androidGradlePlugin = "8.2.0"
+androidXDoucmentFile = "1.0.1"
+androidxActivity = "1.8.2"
+androidxComposeCompiler = "1.5.6"
+androidxComposeMaterial3 = "1.2.0-beta01"
+androidxComposeUi = "1.5.4"
+androidxContraintLayout = "1.0.1"
+androidxCore = "1.12.0"
+androidxLifecycle = "2.6.2"
+androidxNavigation = "2.7.6"
+androidxTestExt = "1.1.5"
+androidxTestRunner = "1.5.2"
+ben-manes-versions = "0.46.0"
+cldrPlural = "41"
+conscript = "2.5.2"
+coroutines = "1.7.1"
+datetime = "0.4.0"
+desugar = "2.0.4"
+detekt = "1.22.0"
+json = "1.5.0"
+junit = "4.13.2"
+koin-androidx-compose = "3.4.4"
+koin-core = "3.4.0"
+kotlin = "1.9.21"
+ksp = "1.9.21-1.0.16"
+ktor = "2.3.0"
+logcat = "0.1"
+media3 = "1.2.0"
+mimeTypes = "1.0.4"
+orbitMVI = "6.0.0"
+#protoc = "3.20.1"
+#grpc = "1.47.0"
+#grpc-kotlin = "1.3.0"
+#protobufPlugin = "0.9.3"
+googleProtobuf = "3.21.9"
+googleProtobufKotlinLite = "3.21.9"
+googleProtobufPlugin = "0.9.1"
+grpc = "1.50.2"
+grpcKotlin = "1.3.0"
+coil = "2.4.0"
+zoomable = "1.5.0-beta1"
+
+result = "1.1.17"
+retry = "1.0.9"
+sqlDelight = "1.5.5"
+googleAuth = "1.17.0"
+secrets = "2.0.1"
+
+[libraries]
+android-tools-desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidxActivity" }
+androidx-compose-material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "androidxComposeUi"}
+androidx-compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "androidxComposeUi"}
+androidx-compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "androidxComposeMaterial3" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui", version.ref = "androidxComposeUi" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidxComposeUi" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidxComposeUi" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3" }
+androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidxNavigation" }
+conscript = { module = "org.conscrypt:conscrypt-android", version.ref = "conscript" }
+google-accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accomponist" }
+io-gitlab-arturbosch-detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin-androidx-compose" }
+koin-core = { module = "io.insert-koin:koin-android", version.ref = "koin-core" }
+kotlin-result = { module = "com.michael-bull.kotlin-result:kotlin-result", version.ref = "result" }
+kotlin-result-coroutines = { module = "com.michael-bull.kotlin-result:kotlin-result-coroutines", version.ref = "result" }
+kotlin-retry = { module = "com.michael-bull.kotlin-retry:kotlin-retry", version.ref = "retry" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "json" }
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json ", version.ref = "ktor" }
+logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
+orbitmvi-core = { module = "org.orbit-mvi:orbit-core", version.ref = "orbitMVI" }
+orbitmvi-viewmodel = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbitMVI" }
+
+google-protobuf-protoc = { module = "com.google.protobuf:protoc", version.ref = "googleProtobuf" }
+google-protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "googleProtobuf" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpc" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpc" }
+grpc-protoc-gen-java = { module = "io.grpc:protoc-gen-grpc-java", version.ref = "grpc"}
+grpc-protoc-gen-kotlin = { module = "io.grpc:protoc-gen-grpc-kotlin", version.ref = "grpcKotlin" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpc" }
+grpc-kotlin-stub = { module = "io.grpc:grpc-kotlin-stub", version.ref = "grpcKotlin" }
+
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+net-engawapg-lib-zoomable = { module = "net.engawapg.lib:zoomable", version.ref = "zoomable" }
+dep-google-secrets-gradle-plugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "secrets" }
+
+
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-gradle = { id = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+google-protobuf = { id = "com.google.protobuf", version.ref = "googleProtobufPlugin" }
+sqldelight = { id = "com.squareup.sqldelight", version.ref = "sqlDelight" }
+secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets"}
