@@ -1,0 +1,5 @@
+# Voice Search App
+[[./app.jpg]]
+
+# Configuration
+Copy the =secrets.defaults.properties= file to =secrets.properties= and configure the variables in that file to point to the [[https://github.com/unmute-tech/voice-search-server][voice-search-server]] installation.
