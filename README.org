@@ -2,4 +2,4 @@
 [[./app.jpg]]
 
 # Configuration
-Copy the =secrets.defaults.properties= file to =secrets.properties= and configure the variables in that file to point to the [[https://github.com/unmute-tech/voice-search-server][voice-search-server]] installation.
+To build and deploy the Voice Search App you'll need to copy the =secrets.defaults.properties= file to =secrets.properties= and configure the variables in that file to point to the [[https://github.com/unmute-tech/voice-search-server][voice-search-server]] installation. The app also needs to interface with the [[https://github.com/unmute-tech/voice-search-app-api][voice-search-app-api]] server to log interactions & recordings and store user ratings.
